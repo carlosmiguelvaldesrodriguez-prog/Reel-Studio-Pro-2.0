@@ -4,10 +4,5 @@ class VideoClip {
   double durationSeconds;
   String transitionType;
 
-  VideoClip({
-    required this.id,
-    required this.imagePath,
-    this.durationSeconds = 2.0,
-    this.transitionType = 'fade',
-  });
+  VideoClip({ required this.id, required this.imagePath, this.durationSeconds = 3.0, this.transitionType = 'fade' });
 }
