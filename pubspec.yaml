@@ -1,5 +1,5 @@
 name: reel_studio_pro_v2
-description: Reel Studio Pro 2.0 - Enterprise Video Editor
+description: Reel Studio Pro 2.0 - Enterprise Video Editor con IA y Jukebox.
 publish_to: 'none'
 version: 2.0.0+1
 
@@ -9,12 +9,22 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  
+  # --- GESTIÓN DE ESTADO ---
   provider: ^6.1.1
-  audioplayers: ^5.2.1
-  process_run: ^0.13.2+1
+
+  # --- INTELIGENCIA ARTIFICIAL ---
   google_generative_ai: ^0.4.0
+
+  # --- MULTIMEDIA Y AUDIO ---
+  audioplayers: ^5.2.1
+  http: ^1.2.0          # <--- AGREGADO (Para descargar música)
+  image: ^4.1.4         # <--- AGREGADO (Para comprimir fotos)
+
+  # --- SISTEMA Y ARCHIVOS ---
+  file_picker: ^8.0.0   # <--- AGREGADO (Para seleccionar fotos y guardar video)
   path_provider: ^2.1.1
-  uuid: ^4.2.2
+  process_run: ^0.13.2+1 # <--- EL MÚSCULO NATIVO
 
 dev_dependencies:
   flutter_test:
