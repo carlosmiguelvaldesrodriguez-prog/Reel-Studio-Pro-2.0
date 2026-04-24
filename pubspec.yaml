@@ -1,0 +1,25 @@
+name: reel_studio_pro_v2
+description: Reel Studio Pro 2.0 - Enterprise Video Editor
+publish_to: 'none'
+version: 2.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.1
+  audioplayers: ^5.2.1
+  process_run: ^0.13.2+1
+  google_generative_ai: ^0.4.0
+  path_provider: ^2.1.1
+  uuid: ^4.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
